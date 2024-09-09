@@ -5,22 +5,22 @@ from logging.handlers import RotatingFileHandler
 
 
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-API_ID = int(os.environ.get("API_ID", ""))
-API_HASH = os.environ.get("API_HASH", "")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "7240324742:AAEaZBNwCx6VrESrSLmekjv9bO4iefBaAMY")
+API_ID = int(os.environ.get("API_ID", "29872536"))
+API_HASH = os.environ.get("API_HASH", "65e1f714a47c0879734553dc460e98d6")
 
 
-OWNER_ID = int(os.environ.get("OWNER_ID", ""))
-DB_URL = os.environ.get("DB_URL", "")
-DB_NAME = os.environ.get("DB_NAME", "")
+OWNER_ID = int(os.environ.get("OWNER_ID", "6698364560"))
+DB_URL = os.environ.get("DB_URL", "mongodb+srv://denji3494:denji3494@cluster0.bskf1po.mongodb.net/")
+DB_NAME = os.environ.get("DB_NAME", "madflixbotz")
 JOIN_REQ_DB = os.environ.get("JOIN_REQ_DB", DB_URL)
 
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002484543404"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002080596319"))
 
 
-FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "600")) # auto delete in seconds
+FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "1800")) # auto delete in seconds
 
 
 PORT = os.environ.get("PORT", "8080")
@@ -29,8 +29,8 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 
 try:
-    ADMINS=[6888984704]
-    for x in (os.environ.get("ADMINS", "6888984704").split()):
+    ADMINS=[1110013191]
+    for x in (os.environ.get("ADMINS", "1110013191").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -57,18 +57,18 @@ BOT_STATS_TEXT = "<b>BOT UPTIME :</b>\n{uptime}"
 
 
 
-USER_REPLY_TEXT = "You Lost Or Something 🙃"
+USER_REPLY_TEXT = "Don't send messages directly I'm only file sharing bot."
 
 START_MSG = os.environ.get("START_MESSAGE", "Hello {mention}\n\nI Can Store Private Files In Specified Channel And Other Users Can Access It From Special Link.")
 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {mention}\n\n<b>You Need To Join In My Channel/Group To Use Me\n\nKindly Please Join Channel</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {mention}\n\n<b>You Need To Join Our Channels To Use Me.\n\nKindly Join Our Channels</b>")
 
 
 
 
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(6888984704)
+ADMINS.append(6698364560)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
