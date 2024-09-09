@@ -10,7 +10,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b>🤖 My Name :</b> {client.me.mention} \n<b>📝 Language :</b> <a href='https://python.org'>Python 3</a> \n<b>📚 Library :</b> <a href='https://pyrogram.org'>Pyrogram {__version__}</a> \n<b>🚀 Server :</b> <a href='https://heroku.com'>Heroku</a> \n<b>📢 Channel :</b> <a href='https://t.me/Madflix_Bots'>MadflixBotz</a> \n<b>🧑‍💻 Developer :</b> <a href='tg://user?id={OWNER_ID}'>MaadflixOfficials</a>",
+            text = f"<b>○ Creator : <a href='tg://openmessage?user_id={OWNER_ID}'>L Λ W L I Ξ T</a>\n○ Channel : @Nxivm_Anime\n○ Support Group : @Nxivm_Support</b>",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup([
                 [InlineKeyboardButton("🏡 Home", callback_data = "home"),
