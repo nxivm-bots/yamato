@@ -17,7 +17,7 @@ JOIN_REQ_DB = os.environ.get("JOIN_REQ_DB", DB_URL)
 
 
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002484543404"))
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002080596319"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002124542762"))
 
 
 FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "1800")) # auto delete in seconds
