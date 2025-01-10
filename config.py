@@ -5,7 +5,7 @@ from logging.handlers import RotatingFileHandler
 
 
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "7798258716:AAHC5FwRGZiN58wtzgmAF14sBNyM0cICWQU")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "7798258716:AAG8vvc3Wz9Q3rZhrS1JCLrgd9Vq2ks_ybc")
 API_ID = int(os.environ.get("API_ID", "29872536"))
 API_HASH = os.environ.get("API_HASH", "65e1f714a47c0879734553dc460e98d6")
 
@@ -17,7 +17,7 @@ JOIN_REQ_DB = os.environ.get("JOIN_REQ_DB", DB_URL)
 
 
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002484543404"))
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002355383131"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002192792394"))
 
 
 FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "1800")) # auto delete in seconds
@@ -29,8 +29,8 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 
 try:
-    ADMINS=[6698364560]
-    for x in (os.environ.get("ADMINS", "6698364560").split()):
+    ADMINS=[6663845789]
+    for x in (os.environ.get("ADMINS", "6663845789").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -68,7 +68,7 @@ FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {mention}\n\n<b>You Need 
 
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(6698364560)
+ADMINS.append(6663845789)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
