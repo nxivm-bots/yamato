@@ -16,7 +16,7 @@ DB_NAME = os.environ.get("DB_NAME", "yamato")
 JOIN_REQ_DB = os.environ.get("JOIN_REQ_DB", DB_URL)
 
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-100227057801"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002270578012"))
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002192792394"))
 
 
